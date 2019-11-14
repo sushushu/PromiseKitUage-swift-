@@ -13,6 +13,8 @@
 		51B1DA44237D018800F8D442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B1DA42237D018800F8D442 /* Main.storyboard */; };
 		51B1DA46237D018A00F8D442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B1DA45237D018A00F8D442 /* Assets.xcassets */; };
 		51B1DA49237D018A00F8D442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B1DA47237D018A00F8D442 /* LaunchScreen.storyboard */; };
+		51FD5881237D49160046AE96 /* PromiseNotificaCenterFactorty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FD5880237D49160046AE96 /* PromiseNotificaCenterFactorty.swift */; };
+		7A0C29BF1824D2C3D6298D0F /* libPods-PromiseKitUseage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9EF0A2EE840B11A2C657B9 /* libPods-PromiseKitUseage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		51B1DA45237D018A00F8D442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51B1DA48237D018A00F8D442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51B1DA4A237D018A00F8D442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FD5880237D49160046AE96 /* PromiseNotificaCenterFactorty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseNotificaCenterFactorty.swift; sourceTree = "<group>"; };
+		6F9EF0A2EE840B11A2C657B9 /* libPods-PromiseKitUseage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PromiseKitUseage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F7609DBD6E30475667AEFF /* Pods-PromiseKitUseage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromiseKitUseage.debug.xcconfig"; path = "Target Support Files/Pods-PromiseKitUseage/Pods-PromiseKitUseage.debug.xcconfig"; sourceTree = "<group>"; };
+		94623D50A5806A686054AC9B /* Pods-PromiseKitUseage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromiseKitUseage.release.xcconfig"; path = "Target Support Files/Pods-PromiseKitUseage/Pods-PromiseKitUseage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0C29BF1824D2C3D6298D0F /* libPods-PromiseKitUseage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2117C4AF6A188E540047DF1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F9EF0A2EE840B11A2C657B9 /* libPods-PromiseKitUseage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		51B1DA30237D018800F8D442 = {
 			isa = PBXGroup;
 			children = (
 				51B1DA3B237D018800F8D442 /* PromiseKitUseage */,
 				51B1DA3A237D018800F8D442 /* Products */,
+				B85C00179AA0CBFC70AC51C6 /* Pods */,
+				2117C4AF6A188E540047DF1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +76,22 @@
 				51B1DA3C237D018800F8D442 /* AppDelegate.swift */,
 				51B1DA3E237D018800F8D442 /* SceneDelegate.swift */,
 				51B1DA40237D018800F8D442 /* ViewController.swift */,
+				51FD5880237D49160046AE96 /* PromiseNotificaCenterFactorty.swift */,
 				51B1DA42237D018800F8D442 /* Main.storyboard */,
 				51B1DA45237D018A00F8D442 /* Assets.xcassets */,
 				51B1DA47237D018A00F8D442 /* LaunchScreen.storyboard */,
 				51B1DA4A237D018A00F8D442 /* Info.plist */,
 			);
 			path = PromiseKitUseage;
+			sourceTree = "<group>";
+		};
+		B85C00179AA0CBFC70AC51C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F7609DBD6E30475667AEFF /* Pods-PromiseKitUseage.debug.xcconfig */,
+				94623D50A5806A686054AC9B /* Pods-PromiseKitUseage.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51B1DA4D237D018A00F8D442 /* Build configuration list for PBXNativeTarget "PromiseKitUseage" */;
 			buildPhases = (
+				5D0DBF57B0BDD1D0AC9689E7 /* [CP] Check Pods Manifest.lock */,
 				51B1DA35237D018800F8D442 /* Sources */,
 				51B1DA36237D018800F8D442 /* Frameworks */,
 				51B1DA37237D018800F8D442 /* Resources */,
@@ -133,6 +161,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D0DBF57B0BDD1D0AC9689E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PromiseKitUseage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51B1DA35237D018800F8D442 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +194,7 @@
 				51B1DA41237D018800F8D442 /* ViewController.swift in Sources */,
 				51B1DA3D237D018800F8D442 /* AppDelegate.swift in Sources */,
 				51B1DA3F237D018800F8D442 /* SceneDelegate.swift in Sources */,
+				51FD5881237D49160046AE96 /* PromiseNotificaCenterFactorty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +336,7 @@
 		};
 		51B1DA4E237D018A00F8D442 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F7609DBD6E30475667AEFF /* Pods-PromiseKitUseage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +354,7 @@
 		};
 		51B1DA4F237D018A00F8D442 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94623D50A5806A686054AC9B /* Pods-PromiseKitUseage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
