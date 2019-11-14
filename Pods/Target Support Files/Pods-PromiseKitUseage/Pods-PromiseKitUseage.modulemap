@@ -1,0 +1,6 @@
+module Pods_PromiseKitUseage {
+  umbrella header "Pods-PromiseKitUseage-umbrella.h"
+
+  export *
+  module * { export * }
+}
